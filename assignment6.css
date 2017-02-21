@@ -1,0 +1,24 @@
+ body {
+    padding-top: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .well {
+    background-color: #d9edf7;
+  }
+  h4 {
+    margin-top: 0px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  .parentpanel {
+    background-color: #31708f;
+  }
+  .childpanel {
+    background-color: green;
+  }
+  h3 {
+    color: #333;
+    font-size: 20px;
+  
+  
