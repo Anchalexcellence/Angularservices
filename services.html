@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+   <head>
+      <title>Assignment Ang</title>
+      <!-- bootstrap -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <!-- angular -->
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+      <script type="text/javascript" src="services.js"></script>
+      <link rel="stylesheet" type="text/css" href="assignment6.css">
+   </head>
+   <body ng-app="myApp">
+      <div class="row">
+         <div class="col-md-6 col-sm-6">
+            <div class="well">
+               <center>
+                  <h4> Using Factory </h4>
+               </center>
+               <h3>First Controller</h3>
+               <div class="panel panel-default parentpanel">
+                  <div class="panel-body" ng-controller="Ctrl1">
+                     <div class="form-group">
+                        <label for="First Value">Enter Value</label>
+                        <input type="text" class="form-control"ng-change="check(data)" ng-model="data" />
+                     </div>
+                  </div>
+               </div>
+               <h3>Second Controller</h3>
+               <div class="panel panel-default childpanel">
+                  <div class="panel-body" ng-controller="Ctrl2" >
+                     <div class="form-group">
+                        <label for="second   Value">Enter Value</label>
+                        <input type="text" class="form-control"ng-change="check(data)" ng-model="data" />
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col-md-6 col-sm-6">
+            <div class="well">
+               <center>
+                  <h4> Using Services </h4>
+               </center>
+               <h3>First Controller</h3>
+               <div class="panel panel-default parentpanel">
+                  <div class="panel-body" ng-controller="controller3">
+                     <div class="form-group">
+                        <label for="First Value">Enter Value</label>
+                        <input type="text" class="form-control" ng-change="docheck(value)" ng-model="value" />
+                     </div>
+                  </div>
+               </div>
+               <h3>Second Controller</h3>
+               <div class="panel panel-default childpanel">
+                  <div class="panel-body" ng-controller="controller4" >
+                     <div class="form-group">
+                        <label for="second   Value">Enter Value</label>
+                        <input type="text" class="form-control" ng-change="docheck(value)" ng-model="value" />
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </body>
+</html>
